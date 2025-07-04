@@ -1,0 +1,16 @@
+PODS:
+  - SxwlAdsSdk (0.1.0)
+
+DEPENDENCIES:
+  - SxwlAdsSdk (from `../`)
+
+EXTERNAL SOURCES:
+  SxwlAdsSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SxwlAdsSdk: d968a313f109b209d4c3810c81c540b1f922d3bf
+
+PODFILE CHECKSUM: f6ad6d0800b8be40aec68b477459e021f46e6e84
+
+COCOAPODS: 1.16.2

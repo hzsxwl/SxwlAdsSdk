@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SxwlAdsSdk'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SxwlAdsSdk.'
+  s.version          = '4.0.5'
+  s.summary          = 'sxwl iOS sdk'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,25 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/260413992@qq.com/SxwlAdsSdk'
+  s.homepage         = 'https://github.com/hzsxwl/SxwlAdsSdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '260413992@qq.com' => '260413992@qq.com' }
-  s.source           = { :git => 'https://github.com/260413992@qq.com/SxwlAdsSdk.git', :tag => s.version.to_s }
+  s.author           = { '3318596470@qq.com' => '3318596470@qq.com' }
+  s.source           = { :git => 'https://github.com/hzsxwl/SxwlAdsSdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SxwlAdsSdk/Classes/**/*'
+  s.public_header_files = ['SxwlAdsSdk/Classes/**/SxwlAdsSDK.h', 'SxwlAdsSdk/Classes/**/SxwlRequest.h', 'SxwlAdsSdk/Classes/**/SxwlSplash.h', 'SxwlAdsSdk/Classes/**/SxwlInterstitial.h', 'SxwlAdsSdk/Classes/**/SxwlReward.h', 'SxwlAdsSdk/Classes/**/SxwlAdSdk.h', 'SxwlAdsSdk/Classes/**/SxwlBanner.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAdView.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAd.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAdManager.h']
+  s.vendored_libraries = 'SxwlAdsSdk/Libraries/libSxwlAdsSdk-iOS.a'
   
-  # s.resource_bundles = {
-  #   'SxwlAdsSdk' => ['SxwlAdsSdk/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = "Foundation","UIKit","MobileCoreServices","CoreGraphics","Security","SystemConfiguration","CoreTelephony","AdSupport","CoreData","StoreKit","AVFoundation","MediaPlayer","CoreMedia","WebKit","Accelerate","CoreLocation","AVKit","MessageUI","QuickLook","AudioToolBox","JavaScriptCore","CoreMotion","Photos"
+  s.libraries = "z","resolv.9","sqlite3","c++","c++abi"
+  s.dependency 'ToBid-iOS/GDTAdapter','4.5.10'
+  s.dependency 'ToBid-iOS/BaiduAdapter','4.5.10'
+  s.dependency 'ToBid-iOS/KSAdapter','4.5.10'
+  s.dependency 'ToBid-iOS/TouTiaoAdapter','4.5.10'
+  s.dependency 'ToBid-iOS/CSJMediationAdapter','4.5.10'
+  s.static_framework = true
 end
