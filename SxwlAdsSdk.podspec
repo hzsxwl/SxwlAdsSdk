@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SxwlAdsSdk'
-  s.version          = '4.0.6'
+  s.version          = '4.0.7'
   s.summary          = 'sxwl iOS sdk'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/hzsxwl/SxwlAdsSdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'SxwlAdsSdk/Classes/**/*'
   s.public_header_files = ['SxwlAdsSdk/Classes/**/SxwlAdsSDK.h', 'SxwlAdsSdk/Classes/**/SxwlRequest.h', 'SxwlAdsSdk/Classes/**/SxwlSplash.h', 'SxwlAdsSdk/Classes/**/SxwlInterstitial.h', 'SxwlAdsSdk/Classes/**/SxwlReward.h', 'SxwlAdsSdk/Classes/**/SxwlAdSdk.h', 'SxwlAdsSdk/Classes/**/SxwlBanner.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAdView.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAd.h', 'SxwlAdsSdk/Classes/**/SxwlNativeAdManager.h']
