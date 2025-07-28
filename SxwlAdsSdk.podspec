@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SxwlAdsSdk'
-  s.version          = '4.0.7'
+  s.version          = '4.0.8'
   s.summary          = 'sxwl iOS sdk'
 
 # This description is used to generate tags and improve search results.
