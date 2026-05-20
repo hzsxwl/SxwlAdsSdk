@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SxwlAdsSdk'
-  s.version          = '4.3.3'
+  s.version          = '4.3.5'
   s.summary          = 'sxwl iOS sdk'
 
 # This description is used to generate tags and improve search results.
@@ -39,8 +39,8 @@ TODO: Add long description of the pod here.
   s.dependency 'ToBid-iOS/GDTAdapter','5.5.3'
   s.dependency 'ToBid-iOS/BaiduAdapter','5.5.3'
   s.dependency 'ToBid-iOS/KSAdapter','5.5.3'
-  s.dependency 'ToBid-iOS/TouTiaoAdapter','5.5.3'
-  s.dependency 'ToBid-iOS/CSJMediationAdapter','5.5.3'
+  s.dependency 'ToBid-iOS/CSJAdapter','5.5.3'
+  s.dependency 'ToBid-iOS/GromoreAdapter','5.5.3'
   s.dependency 'ToBid-iOS/AdScopeAdapter','5.5.3'
   s.dependency 'ToBid-iOS/JuTuiAdapter','5.5.3'
   s.dependency 'ToBid-iOS/MercuryAdapter','5.5.3'
